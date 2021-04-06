@@ -1,0 +1,31 @@
+.chek{
+  width:80%;
+  margin: 0 auto;
+}
+.bod{
+  background: linear-gradient(to bottom left,#e0eafc,#cfdef3);
+  height:100vh;
+}
+.head{
+
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #fc8f00;
+}
+@media (max-width:400px)
+{
+  .head{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:850px)
+{
+  .bod{
+    height: 130vh;
+  }
+  .chek{
+    position: relative;
+    left:0;
+  }
+}

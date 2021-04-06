@@ -1,0 +1,132 @@
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <ng-template matStepLabel>Fill out your details</ng-template>
+    <!-- <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required/>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+      </form> -->
+      <!-- <h1 class="head">Vehicle Insurance</h1> -->
+
+      <form class="chek" #regForm="ngForm">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Occupation Type</label>
+            <input type="text" class="form-control" id="inputEmail4" required [(ngModel)]="this.occupation" name="occupation" ngModel>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Gender</label>
+            <select class="custom-select" id="inputGroupSelect01" [(ngModel)]="this.gender" ngModel name="gender">
+              <option selected>Choose...</option>
+              <option >Male</option>
+              <option >Female</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword4">Age</label>
+            <input type="text" class="form-control" id="inputPassword4" required [(ngModel)]="this.age" name="age" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Mobile</label>
+          <input type="tel" maxlength=10 class="form-control "  id="inputAddress2"  required [(ngModel)]="this.mobile" name="mobile" ngModel>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity " required [(ngModel)]="this.city" name="city" ngModel>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputZip">Income per year</label>
+            <input type="tel" maxlength=19 class="form-control" id="inputZip" required [(ngModel)]="this.incyear" name="incyear" ngModel>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck" >
+              Agree terms and conditions
+            </label>
+          </div>
+        </div>
+
+        <!-- <button  class="btn btn-primary" (click)="onReg(regForm)">Proceed</button> -->
+        <div>
+          <button mat-raised-button matStepperNext (click)="onReg(regForm)">Next</button>
+        </div>
+      </form>
+
+
+
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <!-- <form [formGroup]="secondFormGroup"> -->
+      <ng-template matStepLabel>Verify details</ng-template>
+      <!-- <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+               required/>
+      </mat-form-field> -->
+
+      <form class="chek" >
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Occupation Type</label>
+            <input type="text" class="form-control occu" disabled id="inputEmail4" required [(ngModel)]="this.occupation" name="occupation" ngModel>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Gender</label>
+            <input type="text" class="form-control gen" disabled id="inputPassword4" required [(ngModel)]="this.gender" name="gender" ngModel>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword4">Age</label>
+            <input type="text" class="form-control age" disabled id="inputPassword4" required [(ngModel)]="this.age" name="age" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Mobile</label>
+          <input type="tel" maxlength=10 class="form-control mob" disabled id="inputAddress2"  required [(ngModel)]="this.mobile" name="mobile" ngModel>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control cit" disabled id="inputCity " required [(ngModel)]="this.city" name="city" ngModel>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputZip">Income per year</label>
+            <input type="tel" maxlength=19 class="form-control incy" disabled id="inputZip" required [(ngModel)]="this.incyear" name="incyear" ngModel>
+          </div>
+        </div>
+
+
+      <div>
+        <button mat-raised-button matStepperPrevious>Back</button>
+        <button mat-raised-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Make payment</ng-template>
+    <div class="form-group col-md-6">
+      <label for="inputZip">Premium to be paid(in Rs)</label>
+      <input type="tel" maxlength=10 class="form-control prem" disabled id="inputZip" required [(ngModel)]="this.premium" name="premium" ngModel>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputZip">Claim assured(in Rs)</label>
+      <input type="tel" maxlength=10 class="form-control clam" disabled id="inputZip" required [(ngModel)]="this.claim" name="claim" ngModel>
+    </div>
+    <div>
+      <button mat-raised-button matStepperPrevious>Back</button>
+      <button mat-raised-button (click)="stepper.reset()">Make payment</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

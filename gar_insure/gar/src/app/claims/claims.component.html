@@ -1,0 +1,202 @@
+<h1 class="head">Claim details</h1>
+<div *ngIf="policies.length>0">
+<div class="accordion" id="accordionExample"  *ngFor="let policy of policies; index as i">
+  <div *ngIf="policy.isvehicle && policy.isclaim">
+  <div class="card">
+    <div class="card-header" id="{{i+1}}">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" (click)="toggl(i+2)" type="button" data-toggle="collapse" attr.data-target="#{{i+2}}" aria-expanded="true" attr.aria-controls="{{i+2}}">
+          Policy
+        </button>
+      </h2>
+    </div>
+
+    <div id="{{i+2}}" class="collapse "  attr.aria-labelledby="{{i+1}}" data-parent="#accordionExample">
+      <div class="card-body">
+          <div>
+                <ul>
+                  <li>Vehicle Number --    {{policy.vehiclenum}} </li>
+                  <li>Vehicle Manufacturer--    {{policy. manufacturer}} </li>
+                  <li>Vehicle Model--    {{policy.model}} </li>
+                  <li>Registration Year--   {{policy.regyear}} </li>
+                  <li>Mobile Number--    {{policy.mobile}} </li>
+                  <li>City--   {{policy.city}} </li>
+                </ul>
+                <!-- <button  class="btn btn-primary" (click)="onclam(policy)">Claim</button> -->
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div *ngIf="policy.istravel && policy.isclaim">
+  <div class="card">
+    <div class="card-header" id="{{i+1}}">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" (click)="toggl(i+2)" type="button" data-toggle="collapse" attr.data-target="#{{i+2}}" aria-expanded="true" attr.aria-controls="{{i+2}}">
+          Policy
+        </button>
+      </h2>
+    </div>
+
+    <div id="{{i+2}}" class="collapse "  attr.aria-labelledby="{{i+1}}" data-parent="#accordionExample">
+      <div class="card-body">
+          <div>
+                <ul>
+                  <li> Number of people --    {{policy.num_people}} </li>
+                  <li>Start Date--    {{policy.start_date}} </li>
+                  <li>End Date--    {{policy.end_date}} </li>
+                  <!-- <li>Registration Year--   {{policy.regyear}} </li> -->
+                  <li>Mobile Number--    {{policy.mobile}} </li>
+                  <li>City--   {{policy.city}} </li>
+                </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="policy.isliability && policy.isclaim">
+  <div class="card">
+    <div class="card-header" id="{{i+1}}">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" (click)="toggl(i+2)" type="button" data-toggle="collapse" attr.data-target="#{{i+2}}" aria-expanded="true" attr.aria-controls="{{i+2}}">
+          Policy
+        </button>
+      </h2>
+    </div>
+
+    <div id="{{i+2}}" class="collapse "  attr.aria-labelledby="{{i+1}}" data-parent="#accordionExample">
+      <div class="card-body">
+          <div>
+                <ul>
+                  <li> Number of workers --    {{policy.num_people}} </li>
+                  <li>Business type--    {{policy.business_type}} </li>
+                  <li>Service type--    {{policy.service_type}} </li>
+                  <!-- <li>Registration Year--   {{policy.regyear}} </li> -->
+                  <li>Mobile Number--    {{policy.mobile}} </li>
+                  <li>City--   {{policy.city}} </li>
+                </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="policy.isproperty && policy.isclaim">
+  <div class="card">
+    <div class="card-header" id="{{i+1}}">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" (click)="toggl(i+2)" type="button" data-toggle="collapse" attr.data-target="#{{i+2}}" aria-expanded="true" attr.aria-controls="{{i+2}}">
+          Policy
+        </button>
+      </h2>
+    </div>
+
+    <div id="{{i+2}}" class="collapse "  attr.aria-labelledby="{{i+1}}" data-parent="#accordionExample">
+      <div class="card-body">
+          <div>
+                <ul>
+                  <li> Area(in sq.ft) --    {{policy.area}} </li>
+                  <li>Owner type--    {{policy.owner_type}} </li>
+                  <li>Property type--    {{policy.property_type}} </li>
+                  <!-- <li>Registration Year--   {{policy.regyear}} </li> -->
+                  <li>Cost--    {{policy.cost}} </li>
+                  <li>City--   {{policy.city}} </li>
+                </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="policy.isemployee && policy.isclaim">
+  <div class="card">
+    <div class="card-header" id="{{i+1}}">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" (click)="toggl(i+2)" type="button" data-toggle="collapse" attr.data-target="#{{i+2}}" aria-expanded="true" attr.aria-controls="{{i+2}}">
+          Policy
+        </button>
+      </h2>
+    </div>
+
+    <div id="{{i+2}}" class="collapse "  attr.aria-labelledby="{{i+1}}" data-parent="#accordionExample">
+      <div class="card-body">
+          <div>
+                <ul>
+                  <li> Company --    {{policy.company}} </li>
+                  <li>Number of employees--    {{policy.num_people}} </li>
+                  <!-- <li>Property type--    {{policy.property_type}} </li> -->
+                  <!-- <li>Registration Year--   {{policy.regyear}} </li> -->
+                  <li>Mobile--    {{policy.mobile}} </li>
+                  <li>City--   {{policy.city}} </li>
+                </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="policy.isincome && policy.isclaim">
+  <div class="card">
+    <div class="card-header" id="{{i+1}}">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" (click)="toggl(i+2)" type="button" data-toggle="collapse" attr.data-target="#{{i+2}}" aria-expanded="true" attr.aria-controls="{{i+2}}">
+          Policy
+        </button>
+      </h2>
+    </div>
+
+    <div id="{{i+2}}" class="collapse "  attr.aria-labelledby="{{i+1}}" data-parent="#accordionExample">
+      <div class="card-body">
+          <div>
+                <ul>
+                  <li> Ocuupation --    {{policy.occupation}} </li>
+                  <li>Gender--    {{policy.gender}} </li>
+                  <li>Age--    {{policy.age}} </li>
+                   <li>Income per Year--   {{policy.income_year}} </li>
+                  <li>Mobile--    {{policy.mobile}} </li>
+                  <li>City--   {{policy.city}} </li>
+                </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+  <!-- <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseT" aria-expanded="false" aria-controls="collapseT">
+          Collapsible Group Item #2
+        </button>
+      </h2>
+    </div>
+    <div id="collapseT" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseB" aria-expanded="false" aria-controls="collapseB">
+          Collapsible Group Item #3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseB" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div> -->
+
+<div *ngIf="policies.length<1">
+  <p class="no-pol">Sorry, You have not made any claims</p>
+</div>

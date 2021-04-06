@@ -1,0 +1,49 @@
+<h1 class="hed">Exchange Rates</h1>
+<div class="fo">
+<form #eform="ngForm">
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01" >From</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01" ngModel name="from">
+    <option selected>Choose...</option>
+    <option >INR</option>
+    <option >USD</option>
+    <option >EUR</option>
+    <option >CAD</option>
+    <option >CNY</option>
+    <option >AUD</option>
+    <option >RUB</option>
+  </select>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01" >To</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01" ngModel name="to">
+    <option selected>Choose...</option>
+    <option >USD</option>
+    <option >INR</option>
+    <option >EUR</option>
+    <option >CAD</option>
+    <option >CNY</option>
+    <option >AUD</option>
+    <option >RUB</option>
+  </select>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Amount</span>
+  </div>
+  <input type="number" class="form-control" placeholder="amount" aria-label="Username" aria-describedby="basic-addon1" ngModel name="amount">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Result</span>
+  </div>
+  <input type="text" class="form-control result" disabled aria-label="Username" aria-describedby="basic-addon1" ngModel name="answer">
+</div>
+<button class="btn btn-primary bt" (click)="onexch(eform.value)">GET</button>
+</form>
+</div>
+

@@ -1,0 +1,20 @@
+<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+
+
+	<div class="sidebar" >
+		<span class="ico" (click)="activate()">
+			<i class="fas fa-bars fa-4x" aria-hidden="true"></i>
+		</span>
+		<ul>
+			<li><a routerLinkActive="Active" routerLink="home">Home</a></li>
+			<li><a routerLinkActive="Active" routerLink="login">Login</a></li>
+      <li><a routerLinkActive="Active" routerLink="register">Register</a></li>
+      <li><a routerLinkActive="Active" routerLink="news">News</a></li>
+			<li *ngIf="this.authService.isLogged"><a routerLinkActive="Active" routerLink="login" (click)="logout()">Logout</a></li>
+
+		</ul>
+	</div>
+
+
+<!--routerLinkActive="active" routerLink="home"-->
+<router-outlet></router-outlet>

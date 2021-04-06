@@ -1,0 +1,43 @@
+<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+<div class="bod">
+<button class="btn btn-primary upd" routerLinkActive="Active" routerLink="updprof">Update Profile</button>
+<div class="wrapper">
+
+    <div class="left">
+      <i class="fas fa-user fa-7x imgg"></i>
+        <h5>User</h5><h2 class="usern">{{this.username | uppercase}}</h2>
+         <p class="typ">Employee</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3 class="inf">information</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Email</h4>
+                    <p>{{this.email}}</p>
+                 </div>
+                 <div class="data">
+                   <h4>Mobile</h4>
+                    <p>{{this.mobile}}</p>
+                 </div>
+                 <div class="data">
+                  <h4>State</h4>
+                  <p>{{this.state}}</p>
+                 </div>
+               <div class="data">
+                <h4>Address</h4>
+                <p>{{this.address}}</p>
+               </div>
+               <div class="data">
+                <h4>City</h4>
+                <p>{{this.city}}</p>
+             </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+</div>

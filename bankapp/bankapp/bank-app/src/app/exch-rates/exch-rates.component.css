@@ -1,0 +1,20 @@
+.fo{
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin-top: 60px;
+
+}
+.form{
+  line-break:15em;
+}
+.bt{
+  position: relative;
+  left: 40%;
+}
+.hed{
+  position: relative;
+  text-align: center;
+  top: 15px;
+  color: slategray;
+}

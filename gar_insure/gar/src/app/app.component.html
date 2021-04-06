@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- <link rel="stylesheet" href="" -->
+
+
+  <!-- <img src="insu.jpg"> -->
+  <div class="first-page">
+    <header class="head">
+      <div class="brand">
+        <p>GAR INSURE</p>
+      </div>
+      <nav class="navv" >
+        <div class="home" routerLinkActive="Active" routerLink="home">
+          <p>HOME</p>
+        </div>
+        <div *ngIf="!this.authService.isLogged" class="login" routerLinkActive="Active" routerLink="login">
+          <p>LOGIN</p>
+        </div>
+        <div *ngIf="this.authService.isLogged" (click)="logout()" class="login" routerLinkActive="Active" routerLink="login">
+          <p>LOGOUT</p>
+        </div>
+        <div *ngIf="!this.authService.isLogged"   class="signup" routerLinkActive="Active" routerLink="signup">
+          <p>SIGNUP</p>
+        </div>
+      </nav>
+    </header>
+  </div>
+    <!-- <div class="asset">
+      <img src="assets/insu.jpg">
+    </div>
+    <div class="content">
+        <div class="txt">
+          <p class="cont">Insurance for businesses</p>
+          <p class="cont"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Employees</p>
+        </div>
+        <div class="btn">
+          <button class="btn1">Learn More</button>
+        </div>
+    </div>
+      <p class="subcontent">we offer a fair,easy-to-use service that provides total transparency and includes first hand help from the advisors.</p>
+    <div class="org-details">
+      <h1 id="orghed">Organization Details</h1>
+    </div>
+    <div class="org-blocks">
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-user fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Profile</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-list fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Policies</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-list-ol fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Claims</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="org-details">
+      <h1 id="orghed">Our Products</h1>
+    </div>
+    <div class="org-blocks">
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-car-side fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>&nbsp;&nbsp;Vehicle</p>
+          <p>Insurance</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-server fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>&nbsp;Liability</p>
+          <p>Insurance</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-building fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>&nbsp;Property</p>
+          <p>Insurance</p>
+        </div>
+      </div>
+    </div>
+    <div class="org-blocks">
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-money-bill-alt fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>&nbsp;&nbsp;Income </p>
+          <p>Insurance</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-users fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Employee </p>
+          <p>Insurance</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-plane fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>&nbsp;&nbsp;Travel</p>
+          <p>Insurance</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="org-details">
+      <h1 id="orghed">Our Services</h1>
+    </div>
+    <div class="org-blocks">
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-phone-alt fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Customer</p>
+          <p> &nbsp;&nbsp;Care</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-caret-square-down fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Request</p>
+          <p> &nbsp;&nbsp;Claim</p>
+        </div>
+      </div>
+      <div class="org-profile">
+        <div class="prof-img">
+          <i class="fas fa-comment-dots fa-7x"></i>
+        </div>
+        <div class="prof">
+          <p>Live </p>
+          <p>Agent</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+ </div> -->
+ <router-outlet></router-outlet>
+<!-- </body>
+</html> -->

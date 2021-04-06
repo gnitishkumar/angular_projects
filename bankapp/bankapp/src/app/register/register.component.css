@@ -1,0 +1,21 @@
+.chek{
+  width:80%;
+  margin: 0 auto;
+}
+body{
+  background: linear-gradient(to top left,#35b9ae,#38ef7d);
+  height: 100vh;
+}
+.head{
+  /* margin: 1rem auto; */
+  margin-bottom: 50px;
+  margin-left: 45%;
+  font-size: 2rem;
+  color: #4f974f;
+}
+@media(max-width:780px)
+{
+  body{
+    height: 140vh;
+  }
+}

@@ -1,0 +1,17 @@
+.chek{
+  width:80%;
+  margin: 0 auto;
+}
+.head{
+
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #fc8f00;
+}
+@media (max-width:400px)
+{
+  .head{
+    font-size: 1.5rem;
+  }
+}

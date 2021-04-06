@@ -1,0 +1,109 @@
+/* .homie{
+
+
+margin: auto;
+}
+.sec,.dan{
+  margin-left: 4em;
+}
+.suc{
+  margin-left: 34em;
+} */
+.bod{
+  background: linear-gradient(to bottom left,#74ebd5,#ACB6E5);
+  height: 230vh;
+}
+.cc{
+	position: relative;
+	width: 60%;
+height: 450px;
+	border:1px solid black;
+	margin-bottom: 15px;
+	left: 20%;
+	top:5%;
+}
+.weath{
+	background-image: url('D:\angular\bankapp\bankapp\src\app\home\weth.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.exrates{
+	background-image: url('D:\angular\bankapp\bankapp\src\app\home\exr.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.prof{
+	background-image: url('D:\angular\bankapp\bankapp\src\app\home\mprof.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*{
+	height: 100%;
+	font-family: sans-serif;
+}
+.cbut{
+
+	cursor: pointer;
+  position: relative;
+  left: 30%;
+  top: 40%;
+
+	width: 40%;
+	border:1px solid white;
+	font-size: 17px;
+	color: rgb(0,0,0);
+
+	outline: none;
+	background-color: rgb(182, 232, 242);
+}
+.ar{
+  margin-bottom: 20px;
+ text-align: center;
+}
+.but1{
+	height: 40px;
+	padding-top: 4px;
+}
+.but2{
+	height: 53px;
+	padding-top: 4px;
+}
+.but3{
+	height: 40px;
+	padding-top: 8px;
+}
+.but1:hover{
+	background-color: rgb(24, 34, 36);
+	color: white;
+}
+.but2:hover{
+	background-color: rgb(24, 34, 36);
+	color: white;
+}
+.but3:hover{
+	background-color: rgb(24, 34, 36);
+	color: white;
+}
+@media (max-width:700px)
+{
+	.cbut{
+		font-size: 13px;
+  }
+  .bod{
+    height:225vh;
+  }
+}
+@media (max-width:500px)
+{
+
+  .bod{
+    height:245vh;
+  }
+}
+@media (max-width:330px)
+{
+
+  .bod{
+    height:260vh;
+  }
+}

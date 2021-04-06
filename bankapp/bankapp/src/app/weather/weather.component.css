@@ -1,0 +1,113 @@
+#divWeatherMain{
+  display: block;
+  border-radius: 10px;
+  margin-top:50px;
+  /* margin-left:30em; */
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 520px;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bod{
+  background: linear-gradient(to bottom left,#a8ff78,#78ffd6);
+  height:100vh;
+}
+.wid1{
+  font-size: 58px;
+  margin-top: 5px;
+}
+.wid2{
+  font-size: 32px;
+}
+.wid3{
+  font-size: 32px;
+}
+.wid4{
+  font-size: 35px;
+  margin-top: 10px;
+  color:white;
+}
+.wid5{
+  font-size: 32px;
+}
+.hed{
+  position: relative;
+  top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(21, 175, 226);
+  font-size: 25px;
+}
+.weatherWidgetRow{
+  display:block;
+  margin:35px auto;
+  width: fit-content;
+}
+
+.sun{
+  margin-top: 10px;
+  color: yellow;
+  filter: drop-shadow( 1px 1px 10px yellow);
+}
+
+.moon{
+  margin-top: 10px;
+  color: white;
+  filter: drop-shadow( 1px 1px 10px white);
+}
+
+.cloudDiv{
+  margin-top: -40px;
+}
+
+.cloud{
+  color: rgb(104, 175, 197);
+  filter: drop-shadow( 1px 1px 5px rgb(104, 175, 197));
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes movement{
+  from{margin-left: -55px;}
+  to{margin-left: 65px;}
+}
+@media (max-width:1400px)
+{ #divWeatherMain{
+  width: 60%;
+  left: 20%;
+    }
+
+}
+
+@media (max-width:600px)
+{ #divWeatherMain{
+  width: 80%;
+  left: 10%;
+    }
+  .wid1{
+    font-size: 40px;
+  }
+  .wid2,.wid3,.wid4,.wid5{
+    font-size: 23px;
+  }
+}
+@media (max-width:300px)
+{
+  #divWeatherMain{
+    width: 80%;
+    left: 10%;
+      }
+      .wid1{
+  font-size: 30px;
+}
+  .wid2,.wid3,.wid4,.wid5{
+    font-size: 18px;
+  }
+}

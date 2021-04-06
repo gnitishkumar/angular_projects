@@ -1,0 +1,14 @@
+
+
+
+.head{
+  /* margin: 1rem auto; */
+  margin-bottom: 50px;
+  margin-left: 45%;
+  font-size: 2rem;
+  color: #89dad6;
+}
+.no-pol{
+  color: red;
+  font-size: 1rem;
+}

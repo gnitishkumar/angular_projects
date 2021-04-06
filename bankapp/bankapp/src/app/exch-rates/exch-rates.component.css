@@ -1,0 +1,24 @@
+.fo{
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin-top: 60px;
+
+}
+.bod{
+  background: linear-gradient(to bottom left,#C9D6FF,#E2E2E2);
+  height:100vh;
+}
+.form{
+  line-break:15em;
+}
+.bt{
+  position: relative;
+  left: 40%;
+}
+.hed{
+  position: relative;
+  text-align: center;
+  top: 15px;
+  color: slategray;
+}
